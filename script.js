@@ -1,4 +1,4 @@
-// Register GSAP ScrollTrigger
+﻿// Register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 pageTransition.style.display = 'none'; // Loader takes over
             }
             
-            // Ön yükleme sırasında elementleri gizleyelim ki, loader bitince ikinci kez yüklenmiş gibi bir flash yapmasınlar.
+            // Ã–n yÃ¼kleme sÄ±rasÄ±nda elementleri gizleyelim ki, loader bitince ikinci kez yÃ¼klenmiÅŸ gibi bir flash yapmasÄ±nlar.
             gsap.set(".gsap-reveal", { y: 50, opacity: 0 });
             gsap.set(".gsap-fade-up", { y: 100, opacity: 0 });
 
@@ -215,6 +215,34 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    
+    // Mobile Menu Toggle
+    const burgerBtn = document.querySelector(".burger-menu");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const mobileLinks = document.querySelectorAll(".mobile-nav-links a");
+
+    if (burgerBtn && mobileMenu) {
+        burgerBtn.addEventListener("click", () => {
+            burgerBtn.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+            
+            if (mobileMenu.classList.contains("active")) {
+                document.body.style.overflow = "hidden";
+            } else {
+                document.body.style.overflow = "";
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                burgerBtn.classList.remove("active");
+                mobileMenu.classList.remove("active");
+                document.body.style.overflow = "";
+            });
+        });
+    }
+
     } // End of initAnimations
 
 }); // End of DOMContentLoaded
+
