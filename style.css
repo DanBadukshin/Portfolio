@@ -318,6 +318,7 @@ a {
     z-index: 1000;
     mix-blend-mode: difference;
     color: white;
+    box-sizing: border-box;
 }
 
 .nav-links {
@@ -331,19 +332,22 @@ a {
 .burger-menu {
     display: none;
     flex-direction: column;
+    justify-content: center;
     gap: 6px;
     background: none;
     border: none;
     padding: 10px;
     z-index: 1002;
     cursor: pointer;
+    width: 44px;
+    height: 44px;
 }
 
 .burger-menu span {
     display: block;
     width: 24px;
-    height: 1px;
-    background-color: white;
+    height: 1.5px;
+    background-color: #fff;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -668,7 +672,7 @@ footer {
 @media (max-width: 768px) {
     :root {
         --container-padding: 1.5rem;
-        --section-padding: 5rem 0;
+        --section-padding: 4rem 0;
     }
     
     h1 {
@@ -698,8 +702,18 @@ footer {
         display: none;
     }
     .burger-menu {
-        display: flex;
-    }
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    padding: 10px;
+    z-index: 1002;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
     .hero-details {
         margin-top: 3rem;
     }
@@ -761,4 +775,5 @@ footer {
 .page-transition.loaded {
     opacity: 0;
 }
+
 
