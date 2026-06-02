@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="Brand%20elements/Logo_symbol.svg">
+    <meta name="description" content="Acacia Coffee Project - Brand Identity and Packaging by Dan Badukshin">
+    <title>Acacia Coffee | Dan Badukshin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-transition"></div>
+    <div id="loader">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('skipLoader')) {
+                document.getElementById('loader').style.display = 'none';
+                window.skipLoaderFlag = true;
+                const newUrl = window.location.pathname + window.location.hash;
+                window.history.replaceState({}, document.title, newUrl);
+            }
+        </script>
+        <div class="loader-content">
+            <div class="loader-top-left">
+                <span><img src="Brand%20elements/Logo_symbol.svg" alt="Symbol" class="loader-symbol"></span>
+            </div>
+            <div class="loader-top-right">
+                <span>Portfolio &copy; 2026</span>
+            </div>
+            <div class="loader-center">
+                <div class="loader-percentage huge-text accent-font">0%</div>
+            </div>
+            <div class="loader-bottom-left">
+                <span>Loading experiences...</span>
+            </div>
+        </div>
+    </div>
+    <div class="custom-cursor"></div>
+    <div class="noise-overlay"></div>
+    <div class="grid-overlay">
+        <div class="container grid h-100">
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+        </div>
+    </div>
+
+    <nav class="grid container site-nav">
+        <div class="col-span-2">
+            <a href="index.html" class="logo"><img src="Brand%20elements/logotype.svg" alt="Dan Badukshin"></a>
+        </div>
+        <div class="col-span-2 nav-links" style="justify-content: flex-end;">
+            <a href="index.html?skipLoader=true" class="back-button" style="display: inline-flex; align-items: center; gap: 0.5rem; text-transform: uppercase; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; background: rgba(0,0,0,0.05); padding: 0.5rem 1rem; border-radius: 20px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Editorial Project Cover -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="gsap-reveal fw-bold">acacia coffee</h1>
+                <p class="hero-subtext gsap-reveal delay-1 hero-small-text">Warmth over elitism.</p>
+                <div class="hero-details gsap-fade-up delay-2">
+                    <p>//</p>
+                    <p>Identity System<br>Packaging Direction<br>Brand Expression</p>
+                </div>
+            </div>
+            <div class="hero-image gsap-fade-up delay-1">
+                <img src="img/project/acacia/cover tot bag.webp" alt="Acacia Tote Bag">
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <section class="bg-dark">
+            <div class="container grid section-padding">
+                <div class="col-span-2">
+                    <h2 class="gsap-reveal text-light">Beyond Routine Coffee.</h2>
+                </div>
+                <div class="col-span-2 align-bottom">
+                    <p class="gsap-fade-up delay-1 text-light content-p">Many coffee brands are built for speed. Acacia was built for staying.</p>
+                    <p class="gsap-fade-up delay-2 text-light content-p" style="margin-top: 2rem;">The modern coffee market often prioritizes speed, efficiency, and visual minimalism. Many spaces feel transactional, built for quick visits rather than meaningful time spent.</p>
+                    <p class="gsap-fade-up delay-3 text-light content-p" style="margin-top: 2rem;">Acacia was created as an alternative: a warmer, more human coffee brand designed for pause, conversation, focus, and comfort. Instead of sterile aesthetics, the identity uses character-led illustrations, natural imperfections, and inviting visual language to create emotional connection and repeatability.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Vector Character -->
+        <section class="container section-padding">
+            <div class="grid work-grid">
+                <div class="col-span-4 picture-frame frame-panorama gsap-fade-up">
+                        <img src="img/project/acacia/vector illustration interface.webp" alt="Acacia Vector Illustration Interface" loading="lazy">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Recognition, Distilled -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid">
+                <div class="col-span-2">
+                    <h2 class="gsap-reveal">Recognition, Distilled.</h2>
+                </div>
+                <div class="col-span-2 align-bottom">
+                    <p class="gsap-fade-up delay-1 content-p">The identity was designed for immediate recognition and emotional warmth. By directly referencing the acacia tree, the mark creates instant association, while hand-drawn lines and playful lettering give the brand a more human, handcrafted presence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logos Image -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid work-grid">
+                <div class="col-span-4 picture-frame frame-panorama gsap-fade-up">
+                        <img src="img/project/acacia/logos.webp" alt="Acacia Primary Mark and Variations" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Billboard Image -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid work-grid">
+                <div class="col-span-4 picture-frame frame-panorama gsap-fade-up">
+                        <img src="img/project/acacia/billboard.webp" alt="Acacia Billboard" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Collage Image -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid work-grid">
+                <div class="col-span-4 picture-frame frame-panorama gsap-fade-up">
+                        <img src="img/project/acacia/collateral.webp" alt="Acacia Collateral" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Designed to talk back -->
+        <section class="bg-dark">
+            <div class="container grid section-padding">
+                <div class="col-span-2">
+                    <h2 class="gsap-reveal text-light">Designed to Talk Back.</h2>
+                </div>
+                <div class="col-span-2 align-bottom">
+                    <p class="gsap-fade-up delay-1 text-light content-p">Many coffee brands stop communicating after the order is placed.</p>
+                    <p class="gsap-fade-up delay-2 text-light content-p" style="margin-top: 2rem;">Acacia extends the experience through playful language, warmth, and small moments of personality across menus, packaging, and social content.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cheeky Cards -->
+        <section class="container section-padding">
+            <div class="grid work-grid">
+                <div class="col-span-4 picture-frame frame-panorama gsap-fade-up">
+                        <img src="img/project/acacia/cheeky cards.webp" alt="Acacia Cheeky Cards" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Made to come back (Mug + Bags) -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid work-grid">
+                <div class="col-span-2 picture-frame frame-landscape gsap-fade-up">
+                        <img src="img/project/acacia/mug.webp" alt="Acacia Mug" loading="lazy">
+                </div>
+                <div class="col-span-2 picture-frame frame-landscape gsap-fade-up delay-1">
+                        <img src="img/project/acacia/coffee bags.webp" alt="Acacia Coffee Bags" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Storefront -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid work-grid">
+                <div class="col-span-4 picture-frame frame-panorama gsap-fade-up">
+                        <img src="img/project/acacia/storefront sign.webp" alt="Acacia Storefront Sign" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- System Outcomes -->
+        <section class="bg-dark">
+            <div class="container grid section-padding">
+                <div class="col-span-2">
+                    <h2 class="gsap-reveal text-light">System Outcomes</h2>
+                </div>
+                <div class="col-span-2 about-details gsap-fade-up delay-1" style="margin-top: 0; padding-top: 0; border: none;">
+                    <p>Core identity assets</p>
+                    <ul>
+                        <li>Primary mark, support graphics and two illustrated characters</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">Physical touchpoints</p>
+                    <ul>
+                        <li>Packaging, cups, stickers, signage, tote bag and apparel</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">Brand voice system</p>
+                    <ul>
+                        <li>Short copy lines and character-led moments for packaging and social use</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">Repeatable recognition</p>
+                    <ul>
+                        <li>A warm visual language built around illustration, tone and everyday coffee rituals</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container grid">
+            <div class="col-span-2">
+                <p>Dan Badukshin &copy; 2026</p>
+            </div>
+            <div class="col-span-2 text-right">
+                <p>Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-to-top" class="scroll-to-top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

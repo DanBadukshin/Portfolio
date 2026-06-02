@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="Brand%20elements/Logo_symbol.svg">
+    <meta name="description" content="Melora Bakery Project - Brand Identity and Mascot System by Dan Badukshin">
+    <title>Melora Bakery | Dan Badukshin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-transition"></div>
+    <div id="loader">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('skipLoader')) {
+                document.getElementById('loader').style.display = 'none';
+                window.skipLoaderFlag = true;
+                const newUrl = window.location.pathname + window.location.hash;
+                window.history.replaceState({}, document.title, newUrl);
+            }
+        </script>
+        <div class="loader-content">
+            <div class="loader-top-left">
+                <span><img src="Brand%20elements/Logo_symbol.svg" alt="Symbol" class="loader-symbol"></span>
+            </div>
+            <div class="loader-top-right">
+                <span>Portfolio &copy; 2026</span>
+            </div>
+            <div class="loader-center">
+                <div class="loader-percentage huge-text accent-font">0%</div>
+            </div>
+            <div class="loader-bottom-left">
+                <span>Loading experiences...</span>
+            </div>
+        </div>
+    </div>
+    <div class="custom-cursor"></div>
+    <div class="noise-overlay"></div>
+    <div class="grid-overlay">
+        <div class="container grid h-100">
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+        </div>
+    </div>
+
+    <nav class="grid container site-nav">
+        <div class="col-span-2">
+            <a href="index.html" class="logo"><img src="Brand%20elements/logotype.svg" alt="Dan Badukshin"></a>
+        </div>
+        <div class="col-span-2 nav-links" style="justify-content: flex-end;">
+            <a href="index.html?skipLoader=true" class="back-button" style="display: inline-flex; align-items: center; gap: 0.5rem; text-transform: uppercase; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; background: rgba(0,0,0,0.05); padding: 0.5rem 1rem; border-radius: 20px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Editorial Project Cover (Page 29) -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="gsap-reveal fw-bold">Melora Bakery</h1>
+                <p class="hero-subtext gsap-reveal delay-1 hero-small-text">minimal identity system, character-led recognition, limited visual tools, applied across touchpoints.</p>
+                <div class="hero-details gsap-fade-up delay-2">
+                    <p>//</p>
+                    <p>Brand Identity<br>Mascot System<br>Packaging Design<br>Art Direction</p>
+                </div>
+            </div>
+            <div class="hero-image gsap-fade-up delay-1">
+                <img src="img/project/melora/storefront hero.webp" alt="Storefront Hero" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </section>
+
+        <!-- Page 30: Limited System Clear Recognition -->
+        <section class="container section-padding">
+            <div class="grid" style="align-items: center;">
+                <div class="col-span-2">
+                    <div style="max-width: 400px; margin: 0 auto;">
+                        <h2 class="gsap-reveal" style="margin-bottom: 2rem; font-size: 1.5rem;">LIMITED SYSTEM<br>CLEAR RECOGNITION</h2>
+                        <p class="gsap-fade-up delay-1 content-p">The project explores how a bakery identity can stay recognizable with a narrow set of visual tools.</p>
+                        <p class="gsap-fade-up delay-2 content-p" style="margin-top: 2rem;">Melora was developed as a concept identity for a small bakery-café. The system uses one dominant color, one primary type style and simple illustrated assets.</p>
+                        <p class="gsap-fade-up delay-3 content-p" style="margin-top: 2rem;">The aim was to create a recognizable identity without building a large or overly decorative visual system.</p>
+                    </div>
+                </div>
+                <div class="col-span-2 picture-frame frame-portrait gsap-fade-up">
+                    <img src="img/project/melora/bread mascot.webp" alt="Bread Mascot Cover" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 31: Character-Led Identity System -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid" style="align-items: center;">
+                <div class="col-span-2">
+                    <div style="max-width: 400px; margin: 0 auto;">
+                        <h2 class="gsap-reveal" style="margin-bottom: 2rem; font-size: 1.5rem;">CHARACTER-LED<br>IDENTITY SYSTEM</h2>
+                        <p class="gsap-fade-up delay-1 content-p">Illustration carried the brand tone while the system stayed visually restrained.</p>
+                        <p class="gsap-fade-up delay-2 content-p" style="margin-top: 2rem;">The identity was built around a limited set of recurring assets: the baker symbol, the croissant mark, rounded typography and a single dominant color.</p>
+                        <p class="gsap-fade-up delay-3 content-p" style="margin-top: 2rem;">These elements created recognition across small-format applications without expanding into an overly decorative system.</p>
+                    </div>
+                </div>
+                <div class="col-span-2 picture-frame frame-portrait gsap-fade-up">
+                    <img src="img/project/melora/brand marks group.webp" alt="Brand Marks Group" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 32: Tote Bag Panorama -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid work-grid">
+                <div class="col-span-4 picture-frame frame-panorama gsap-fade-up">
+                    <img src="img/project/melora/tote back.webp" alt="Tote Bag" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 33: Storefront Application -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid" style="align-items: center;">
+                <div class="col-span-2" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div class="picture-frame frame-landscape gsap-fade-up">
+                        <img src="img/project/melora/sign.webp" alt="Sign" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                    </div>
+                    <div class="picture-frame frame-landscape gsap-fade-up delay-1">
+                        <img src="img/project/melora/window graphic.webp" alt="Window Graphic" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div style="max-width: 400px; margin: 0 auto;">
+                        <h2 class="gsap-reveal" style="margin-bottom: 2rem; font-size: 1.5rem;">STOREFRONT<br>APPLICATION</h2>
+                        <p class="gsap-fade-up delay-1 content-p">The identity was applied to the storefront through scale, color and a single illustrated mark.</p>
+                        <p class="gsap-fade-up delay-2 content-p" style="margin-top: 2rem;">The same visual language appears across the sign, window graphic and lower facade pattern.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 34: Takeaway Applications -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid" style="align-items: center;">
+                <div class="col-span-2">
+                    <div style="max-width: 400px; margin: 0 auto;">
+                        <h2 class="gsap-reveal" style="margin-bottom: 2rem; font-size: 1.5rem;">TAKEAWAY<br>APPLICATIONS</h2>
+                        <p class="gsap-fade-up delay-1 content-p">The visual language was extended across packaging, cups and everyday carry items.</p>
+                        <p class="gsap-fade-up delay-2 content-p" style="margin-top: 2rem;">Packaging used recurring marks, product-based illustrations and a consistent color direction to keep the identity recognizable across different formats.</p>
+                        <p class="gsap-fade-up delay-3 content-p" style="margin-top: 2rem;">The applications were designed to remain simple, repeatable and visually connected across takeaway moments.</p>
+                    </div>
+                </div>
+                <div class="col-span-2 picture-frame frame-portrait gsap-fade-up">
+                    <img src="img/project/melora/baguette packaging.webp" alt="Baguette Packaging" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 35: Car Handoff Panorama -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid work-grid">
+                <div class="col-span-4 picture-frame frame-panorama gsap-fade-up">
+                    <img src="img/project/melora/car handoff.webp" alt="Car Handoff" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 36: Physical Touchpoints -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid" style="align-items: center;">
+                <div class="col-span-2" style="display: flex; gap: 1rem;">
+                    <div class="picture-frame frame-portrait gsap-fade-up" style="flex: 1;">
+                        <img src="img/project/melora/tshort front.webp" alt="T-Shirt Front" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                    </div>
+                    <div class="picture-frame frame-portrait gsap-fade-up delay-1" style="flex: 1;">
+                        <img src="img/project/melora/tshort back.webp" alt="T-Shirt Back" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div style="max-width: 400px; margin: 0 auto;">
+                        <h2 class="gsap-reveal" style="margin-bottom: 2rem; font-size: 1.5rem;">PHYSICAL<br>TOUCHPOINTS</h2>
+                        <p class="gsap-fade-up delay-1 content-p">Staff pieces used the main character mark as a simple recognition point, while printed cards carried the same color, typography and illustrated language.</p>
+                        <p class="gsap-fade-up delay-2 content-p" style="margin-top: 2rem;">The applications kept the identity visible across direct customer interactions without adding new graphic layers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 37: Printed Cards Panorama -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid work-grid">
+                <div class="col-span-4 picture-frame frame-panorama gsap-fade-up">
+                    <img src="img/project/melora/printed cards.webp" alt="Printed Cards" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 38: System Outcomes -->
+        <section class="bg-dark">
+            <div class="container grid section-padding">
+                <div class="col-span-2">
+                    <h2 class="gsap-reveal text-light">System Outcomes</h2>
+                </div>
+                <div class="col-span-2 about-details gsap-fade-up delay-1" style="margin-top: 0; padding-top: 0; border: none;">
+                    <p>Character-led identity</p>
+                    <ul>
+                        <li>Primary mark, croissant mark and secondary visual assets</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">Single-color direction</p>
+                    <ul>
+                        <li>One dominant color used across packaging, signage and physical applications</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">Physical touchpoints</p>
+                    <ul>
+                        <li>Storefront, takeaway packaging, cups, staff apparel, tote bag and printed cards</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">Consistent application</p>
+                    <ul>
+                        <li>The identity stayed recognizable across small objects, street-level signage and customer-facing materials</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container grid">
+            <div class="col-span-2">
+                <p>Dan Badukshin &copy; 2026</p>
+            </div>
+            <div class="col-span-2 text-right">
+                <p>Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-to-top" class="scroll-to-top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

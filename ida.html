@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="Brand%20elements/Logo_symbol.svg">
+    <meta name="description" content="IDA Language Academy Project - Content System and Social Direction by Dan Badukshin">
+    <title>IDA Language Academy | Dan Badukshin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-transition"></div>
+    <div id="loader">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('skipLoader')) {
+                document.getElementById('loader').style.display = 'none';
+                window.skipLoaderFlag = true;
+                const newUrl = window.location.pathname + window.location.hash;
+                window.history.replaceState({}, document.title, newUrl);
+            }
+        </script>
+        <div class="loader-content">
+            <div class="loader-top-left">
+                <span><img src="Brand%20elements/Logo_symbol.svg" alt="Symbol" class="loader-symbol"></span>
+            </div>
+            <div class="loader-top-right">
+                <span>Portfolio &copy; 2026</span>
+            </div>
+            <div class="loader-center">
+                <div class="loader-percentage huge-text accent-font">0%</div>
+            </div>
+            <div class="loader-bottom-left">
+                <span>Loading experiences...</span>
+            </div>
+        </div>
+    </div>
+    <div class="custom-cursor"></div>
+    <div class="noise-overlay"></div>
+    <div class="grid-overlay">
+        <div class="container grid h-100">
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+        </div>
+    </div>
+
+    <nav class="grid container site-nav">
+        <div class="col-span-2">
+            <a href="index.html" class="logo"><img src="Brand%20elements/logotype.svg" alt="Dan Badukshin"></a>
+        </div>
+        <div class="col-span-2 nav-links" style="justify-content: flex-end;">
+            <a href="index.html?skipLoader=true" class="back-button" style="display: inline-flex; align-items: center; gap: 0.5rem; text-transform: uppercase; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; background: rgba(0,0,0,0.05); padding: 0.5rem 1rem; border-radius: 20px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Editorial Project Cover -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="gsap-reveal fw-bold">IDA Language Academy</h1>
+                <p class="hero-subtext gsap-reveal delay-1 hero-small-text">Educational content, made engaging.</p>
+                <div class="hero-details gsap-fade-up delay-2">
+                    <p>//</p>
+                    <p>Content System<br>Social Direction<br>Visual Consistency<br>Audience Engagement</p>
+                </div>
+            </div>
+            <div class="hero-image gsap-fade-up delay-1">
+                <img src="img/project/ida/daily vocabulary cover.webp" alt="Daily Vocabulary Cover" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </section>
+
+        <!-- Page 23: The academy needed content... -->
+        <section class="bg-dark">
+            <div class="container grid section-padding">
+                <div class="col-span-2">
+                    <h2 class="gsap-reveal text-light" style="text-transform: none; font-size: 1.5rem; line-height: 1.3;">The academy needed content that could teach, attract and stay recognizable.</h2>
+                </div>
+                <div class="col-span-2 align-bottom">
+                    <p class="gsap-fade-up delay-1 text-light content-p">The existing communication relied on mixed styles, inconsistent typography and generic visual assets. The page lacked a clear structure for educational content.</p>
+                    <p class="gsap-fade-up delay-2 text-light content-p" style="margin-top: 2rem;">The goal was to build a social media system that made language learning easier to read, easier to remember and easier to repeat across formats.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Page 24: Structure First -->
+        <section class="container section-padding">
+            <div class="grid" style="align-items: center;">
+                <div class="col-span-2">
+                    <div style="max-width: 400px; margin: 0 auto;">
+                        <h2 class="gsap-reveal" style="margin-bottom: 2rem; font-size: 1.5rem;">STRUCTURE FIRST<br>ENTERTAINMENT<br>SECOND</h2>
+                        <p class="gsap-fade-up delay-1 content-p">The content had to stay useful before becoming playful.</p>
+                        <p class="gsap-fade-up delay-2 content-p" style="margin-top: 2rem;">The first frame had to stop the scroll and define the tone. It introduced the topic, established the visual language and led into the learning sequence.</p>
+                    </div>
+                </div>
+                <div class="col-span-2 picture-frame frame-portrait gsap-fade-up">
+                    <img src="img/project/ida/cover frame.webp" alt="Cover Frame" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 25: Continuation frames -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid-3 work-grid">
+                <div class="picture-frame frame-portrait gsap-fade-up">
+                    <img src="img/project/ida/continuation frame 1.webp" alt="Continuation Frame 1" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+                <div class="picture-frame frame-portrait gsap-fade-up delay-1">
+                    <img src="img/project/ida/continuation frame 2.webp" alt="Continuation Frame 2" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+                <div class="picture-frame frame-portrait gsap-fade-up delay-2">
+                    <img src="img/project/ida/continuation frame 3.webp" alt="Continuation Frame 3" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="grid" style="margin-top: 4rem;">
+                <div class="col-span-2">
+                    <!-- Layout matches PDF where text is aligned below images -->
+                </div>
+                <div class="col-span-2 align-bottom">
+                    <p class="gsap-fade-up delay-1 content-p">Each carousel was built around a clear learning sequence: hook, explanation, example and response.</p>
+                    <p class="gsap-fade-up delay-2 content-p" style="margin-top: 2rem;">Stickers, cutout characters and pop-culture references made the content easier to approach, remember and interact with.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 26: The system needed variety... -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid" style="align-items: center;">
+                <div class="col-span-2">
+                    <div style="max-width: 400px; margin: 0 auto;">
+                        <h2 class="gsap-reveal" style="margin-bottom: 2rem; text-transform: none; font-size: 1.5rem; line-height: 1.3;">The system needed variety without losing recognition.</h2>
+                        <p class="gsap-fade-up delay-1 content-p">Recurring formats were created for vocabulary, phrase correction, quiz stories, pop-culture references and comment based interaction.</p>
+                        <p class="gsap-fade-up delay-2 content-p" style="margin-top: 2rem;">Each format kept a clear learning function while using the same visual language: cards, stickers, soft backgrounds and direct prompts.</p>
+                    </div>
+                </div>
+                <div class="col-span-2 picture-frame frame-portrait gsap-fade-up">
+                    <img src="img/project/ida/grid of reccuring formats.webp" alt="Grid of Recurring Formats" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 27: Practical Speaking Formats -->
+        <section class="container section-padding" style="padding-top: 0;">
+            <div class="grid" style="align-items: center;">
+                <div class="col-span-2">
+                    <div class="grid work-grid">
+                        <div class="col-span-2 picture-frame frame-portrait gsap-fade-up">
+                            <img src="img/project/ida/practical speaking formats 1.webp" alt="Practical Speaking Format 1" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                        </div>
+                        <div class="col-span-2 picture-frame frame-portrait gsap-fade-up delay-1">
+                            <img src="img/project/ida/practical speaking formats 2.webp" alt="Practical Speaking Format 2" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                        </div>
+                        <div class="col-span-2 picture-frame frame-portrait gsap-fade-up delay-2">
+                            <img src="img/project/ida/practical speaking formats 3.webp" alt="Practical Speaking Format 3" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                        </div>
+                        <div class="col-span-2 picture-frame frame-portrait gsap-fade-up delay-3">
+                            <img src="img/project/ida/practical speaking formats 4.webp" alt="Practical Speaking Format 4" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div style="max-width: 400px; margin: 0 auto;">
+                        <h2 class="gsap-reveal" style="margin-bottom: 2rem; font-size: 1.5rem;">PRACTICAL SPEAKING<br>FORMATS</h2>
+                        <p class="gsap-fade-up delay-1 content-p">Useful language was organized around real speaking situations, not isolated phrases.</p>
+                        <p class="gsap-fade-up delay-2 content-p" style="margin-top: 2rem;">Each post introduced one expression through context, making it easier to understand, remember and use in daily conversation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 28: Content Outcomes -->
+        <section class="bg-dark">
+            <div class="container grid section-padding">
+                <div class="col-span-2">
+                    <h2 class="gsap-reveal text-light">Content Outcomes</h2>
+                </div>
+                <div class="col-span-2 about-details gsap-fade-up delay-1" style="margin-top: 0; padding-top: 0; border: none;">
+                    <p>Reusable content formats</p>
+                    <ul>
+                        <li>Vocabulary posts, quiz stories, phrase correction, carousel lessons and speaking formats</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">Stronger page consistency</p>
+                    <ul>
+                        <li>The account moved from mixed visual styles to a more recognizable and repeatable structure</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">Post-project adoption</p>
+                    <ul>
+                        <li>The visual direction continued to be used after the handoff</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">Full content ownership</p>
+                    <ul>
+                        <li>Visual style, formats, post ideas, copy direction and recurring story templates were developed during the project</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container grid">
+            <div class="col-span-2">
+                <p>Dan Badukshin &copy; 2026</p>
+            </div>
+            <div class="col-span-2 text-right">
+                <p>Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-to-top" class="scroll-to-top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

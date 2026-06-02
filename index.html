@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="Brand%20elements/Logo_symbol.svg">
+    <meta name="description" content="Portfolio of Dan Badukshin - Brand Identity, Visual Strategy, and Editorial Design">
+    <title>Dan Badukshin | Designer</title>
+    <!-- Google Fonts: Mulish & Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-transition"></div>
+    <div id="loader">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('skipLoader')) {
+                document.getElementById('loader').style.display = 'none';
+                window.skipLoaderFlag = true;
+                const newUrl = window.location.pathname + window.location.hash;
+                window.history.replaceState({}, document.title, newUrl);
+            }
+        </script>
+        <div class="loader-content">
+            <div class="loader-top-left">
+                <span><img src="Brand%20elements/Logo_symbol.svg" alt="Symbol" class="loader-symbol"></span>
+            </div>
+            <div class="loader-top-right">
+                <span>Portfolio &copy; 2026</span>
+            </div>
+            <div class="loader-center">
+                <div class="loader-percentage huge-text accent-font">0%</div>
+            </div>
+            <div class="loader-bottom-left">
+                <span>Loading experiences...</span>
+            </div>
+        </div>
+    </div>
+    <div class="custom-cursor"></div>
+    <div class="noise-overlay"></div>
+    <div class="grid-overlay">
+        <div class="container grid h-100">
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+            <div class="grid-overlay-column"></div>
+        </div>
+    </div>
+
+    <nav class="grid container site-nav">
+        <div class="col-span-2">
+            <a href="index.html" class="logo"><img src="Brand%20elements/logotype.svg" alt="Dan Badukshin"></a>
+        </div>
+        <div class="col-span-2 nav-links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Editorial Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="gsap-reveal fw-bold">dan badukshin - designer*</h1>
+                <p class="hero-subtext gsap-reveal delay-1 hero-small-text">Designing brand identities, communication
+                    systems, and visual assets that help businesses earn recognition, clarity, and stronger market
+                    presence.</p>
+                <div class="hero-details gsap-fade-up delay-2">
+                    <p>//</p>
+                    <p>20+ Brands<br>Agency & Independent Work<br>Multi-Industry Experience</p>
+                </div>
+            </div>
+            <div class="hero-image gsap-fade-up delay-1">
+                <img src="img/Dan Badukshin.webp" alt="Dan Badukshin">
+            </div>
+        </section>
+
+        <!-- Selected Works Section -->
+        <section id="work" class="container section-padding">
+            <div class="grid section-header">
+                <h2 class="col-span-2 gsap-reveal">Selected Works</h2>
+                <div class="col-span-2 text-right align-bottom">
+                    <p class="gsap-reveal delay-1">Brand Systems &<br>Visual Strategy</p>
+                </div>
+            </div>
+
+            <div class="grid work-grid">
+                <!-- WORK ITEM 1 -->
+                <div class="work-item col-span-2 gsap-fade-up">
+                    <a href="acacia.html?skipLoader=true" class="picture-frame frame-portrait">
+                        <img src="img/project/acacia/cover tot bag.webp" alt="Acacia Project" loading="lazy">
+                    </a>
+                    <div class="work-meta grid">
+                        <span class="col-span-2 work-title">Acacia Coffee</span>
+                        <span class="col-span-2 work-role text-right">Identity / Packaging</span>
+                    </div>
+                </div>
+
+                <!-- WORK ITEM 2 -->
+                <div class="work-item col-span-2 gsap-fade-up delay-1">
+                    <a href="commercial.html?skipLoader=true" class="picture-frame frame-square">
+                        <img src="img/project/commerical/cover building render.webp" alt="Commercial Visual Systems" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                    </a>
+                    <div class="work-meta grid">
+                        <span class="col-span-2 work-title">Commercial Visual Systems</span>
+                        <span class="col-span-2 work-role text-right">Branding / CGI</span>
+                    </div>
+                </div>
+
+                <!-- WORK ITEM 3 -->
+                <div class="work-item col-span-4 gsap-fade-up">
+                    <a href="ida.html?skipLoader=true" class="picture-frame frame-panorama">
+                        <img src="img/project/ida/daily vocabulary cover.webp" alt="IDA Language Academy" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                    </a>
+                    <div class="work-meta grid">
+                        <span class="col-span-2 work-title">IDA Language Academy</span>
+                        <span class="col-span-2 work-role text-right">Content / Social</span>
+                    </div>
+                </div>
+
+                <!-- WORK ITEM 4 -->
+                <div class="work-item col-span-3 gsap-fade-up delay-1">
+                    <a href="melora.html?skipLoader=true" class="picture-frame frame-landscape">
+                        <img src="img/project/melora/storefront hero.webp" alt="Melora Bakery" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                    </a>
+                    <div class="work-meta grid">
+                        <span class="col-span-2 work-title">Melora Bakery</span>
+                        <span class="col-span-2 work-role text-right">Identity / Mascot</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-dark">
+            <div class="container grid section-padding">
+                <div class="col-span-1">
+                <h2 class="gsap-reveal text-light">About</h2>
+            </div>
+            <div class="col-span-3">
+                <p class="gsap-reveal delay-1 content-p">
+                    Design decisions that strengthen how brands appear, communicate, and compete. Distinction by design.
+                </p>
+                <div class="grid about-details gsap-fade-up delay-2">
+                    <div class="col-span-2">
+                        <h3>Experience</h3>
+                        <ul>
+                            <li>20+ Brands</li>
+                            <li>Agency & Independent Work</li>
+                            <li>Multi-Industry Experience</li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2">
+                        <h3>Focus</h3>
+                        <ul>
+                            <li>Brand Systems</li>
+                            <li>Visual Strategy</li>
+                            <li>Communication Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container grid section-padding">
+            <div class="col-span-2">
+                <h2 class="gsap-reveal">Contact</h2>
+            </div>
+            <div class="col-span-2 contact-info align-bottom">
+                <p class="gsap-reveal delay-1 content-p">For brand identity, visual direction and communication design projects.
+                    Open to discussing relevant projects and collaborations.</p>
+                <a href="mailto:badukshindan@gmail.com"
+                    class="email-link gsap-reveal delay-2">badukshindan@gmail.com</a>
+                <div class="social-links" style="margin-top: 2rem; display: flex; gap: 2rem; font-size: 1.1rem; opacity: 1; transform: none;">
+                    <a href="https://www.linkedin.com/in/dan-badukshin" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">LinkedIn</a>
+                    <a href="tel:+905524493014" style="text-decoration: underline;">+90 (552) 449 30 14</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container grid">
+            <div class="col-span-2">
+                <p>Dan Badukshin &copy; 2026</p>
+            </div>
+            <div class="col-span-2 text-right">
+                <p>Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Libraries -->
+    <a href="#" id="scroll-to-top" class="scroll-to-top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
