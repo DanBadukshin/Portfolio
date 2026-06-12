@@ -19,6 +19,9 @@
     --grid-gap: 2rem;
     --container-padding: 4rem;
     --section-padding: 8rem;
+
+    /* Viewport adjustments */
+    --scrollbar-width: calc(100vw - 100%);
 }
 
 /* 
@@ -158,12 +161,12 @@ a, button {
     background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');
 }
 
-/* Visible Grid Overlay (Swiss Style) */
 .grid-overlay {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
+    left: calc(50vw - (var(--scrollbar-width) / 2));
+    transform: translateX(-50%);
+    width: calc(100vw - var(--scrollbar-width));
     height: 100vh;
     pointer-events: none;
     z-index: 1; /* Above body background, behind images */
@@ -314,8 +317,9 @@ a {
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    left: calc(50vw - (var(--scrollbar-width) / 2));
+    transform: translateX(-50%);
+    width: calc(100vw - var(--scrollbar-width));
     z-index: 1002;
     mix-blend-mode: difference;
     color: white;
@@ -458,7 +462,7 @@ a {
 
 .hero-content {
     flex: 1;
-    padding: 8rem var(--container-padding) 4rem calc(max(0px, (100vw - 1600px) / 2) + var(--container-padding));
+    padding: 8rem var(--container-padding) 4rem calc(max(0px, (calc(100vw - var(--scrollbar-width)) - 1600px) / 2) + var(--container-padding));
     display: flex;
     flex-direction: column;
     justify-content: center;
